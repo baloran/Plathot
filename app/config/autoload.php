@@ -9,6 +9,7 @@
 /* Charger librairie javascript : 
 	-angularjs
 	-mootools
+	-jquery
 */
 $load['js'] = array('mootools');
 
