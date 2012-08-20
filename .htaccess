@@ -1,0 +1,9 @@
+# Fichier htacess pour projet arganeo.tk
+# Author: baloran
+# URL: http://baloran.fr
+
+RewriteEngine on
+
+## Global
+RewriteRule ^([a-zA-Z]{1,20})$   									index.php?page=$1 [L]
+RewriteRule ^([a-zA-Z]{1,20})/([a-zA-Z]{1,20})$   					index.php?page=$1&cat=$2 [L]

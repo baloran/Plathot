@@ -1,0 +1,6 @@
+config.rb
+sass/*
+.sass-cache/*
+autoreload.bat
+plathot_update.xml
+.livereload
