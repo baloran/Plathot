@@ -35,3 +35,9 @@ if ($plathot_update == 1) {
 		}
 	}
 }
+
+// Lien vers library
+define('LIBRARY',CORE.'/library/');
+
+// Lien vers Functions
+define('FUNCTIONS',CORE.'/function/');

@@ -1,6 +1,4 @@
 <?php
-require_once 'app/config/autoload.php';
-
 class Load{
 
 	/**
@@ -25,8 +23,7 @@ class Load{
 	* Function loader permet de charger les différents fichiers
 	*/
 	static function loader(){
-
-		global $load;
+			require_once 'app/config/autoload.php';
 			// Library Javascript
 			if (in_array('mootools', $load['js'])) {
 				echo '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>';
@@ -36,13 +33,11 @@ class Load{
 
 			// Load function
 			if (in_array('multilang', $load['func'])) {
-				echo 'its ok';
 			}
 
 			// Load library
-			if (in_array('database', $load['core'])) {
-				echo 'its ok';
+			if (in_array('database', $load['library'])) {
+				require_once LIBRARY.'database.php';
 			}
-		
 	}
 }

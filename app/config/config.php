@@ -20,7 +20,7 @@ $js_charge = "0";
 // Vérification de mise a jour plathot ? 0 non, 1 oui
 $plathot_update = "0";
 
-// Path d'url theme theme
+// Path d'url theme
 define("WEBROOT", "app/theme/");
 
 // Path d'url js theme
@@ -31,3 +31,12 @@ define("THEME_CSS", WEBROOT.$theme.'/css/');
 
 // Path d'url img theme
 define("THEME_IMG", WEBROOT.$theme.'/img/');
+
+// Path d'url dossier core
+define("CORE", "core");
+
+// Path d'url dossier app
+define("APP", "app");
+
+// Path d'url dossier  app config
+define("APP_CONFIG", APP.'/config/');

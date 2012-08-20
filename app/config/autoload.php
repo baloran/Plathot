@@ -17,7 +17,7 @@ $load['js'] = array('mootools');
 	- database
 	- cache
 */
-$load['core'] = array('cache','database');
+$load['library'] = array('cache','database');
 
 /* Charger les function :
 	- form

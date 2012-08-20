@@ -9,6 +9,7 @@ $_SESSION['Auth'] = array(
 <head id="head">
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="<?= THEME_CSS; ?>styles.css">
+	<?php Load::loader();?>
 	<title></title>
 </head>
 <body>
