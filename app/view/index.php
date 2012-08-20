@@ -5,9 +5,10 @@
 		}
 		Create::form('login','POST');
 		Create::input('input','pseudo','Ton pseudo');
-		Create::input('password','pseudo','');
-		Create::input('submit','','Envoyer');
+		Create::input('password','pass','');
+		Create::input('submit',null,'Envoyer',null,'submit');
 		Create::form_end();
+		print_r($_POST);
 	?>
 </div>
 <div id="footer">

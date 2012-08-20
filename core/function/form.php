@@ -6,8 +6,8 @@ class Create{
 	* @author baloran
 	*
 	*/
-	static public function input($type,$name,$value){
-		echo "<input type='$type' name='$name' value='$value'>";
+	static public function input($type, $name, $value = null, $class = null, $id = null){
+		echo "<input type='$type' name='$name' value='$value' class='$class' id='$id'>";
 	}
 
 	/**
