@@ -32,7 +32,8 @@ class Load{
 			}
 
 			// Load function
-			if (in_array('multilang', $load['func'])) {
+			if (in_array('form', $load['func'])) {
+				require_once FUNCTIONS.'form.php';
 			}
 
 			// Load library
