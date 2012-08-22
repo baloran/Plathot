@@ -3,11 +3,11 @@
 		if (isset($plathot_update_message )) {
 			echo $plathot_update_message;
 		}
-		Create::form('login','POST');
-		Create::input('input','pseudo','Ton pseudo');
-		Create::input('password','pass','');
-		Create::input('submit',null,'Envoyer',null,'submit');
-		Create::form_end();
+		Forms::form('login','POST');
+		Forms::input('input','pseudo','Ton pseudo');
+		Forms::input('password','pass','');
+		Forms::input('submit',null,'Envoyer',null,'submit');
+		Forms::form_end();
 		print_r($_POST);
 	?>
 </div>

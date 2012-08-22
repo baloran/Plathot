@@ -20,6 +20,9 @@ $js_charge = "0";
 // Vérification de mise a jour plathot ? 0 non, 1 oui
 $plathot_update = "0";
 
+// Salage pour cryptage de string
+$salage = "plathotbeautifulframework";
+
 // Path d'url theme
 define("WEBROOT", "app/theme/");
 

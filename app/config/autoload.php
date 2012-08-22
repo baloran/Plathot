@@ -24,4 +24,4 @@ $load['library'] = array('cache','database');
 	- multilang
 	- g_analytics	
 */
-$load['func'] = array('multilang','form');
+$load['func'] = array('multilang','form','structure');

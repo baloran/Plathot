@@ -13,13 +13,15 @@ class Overall{
 	public static function url(){
 		require_once 'app/config/config.php';
 		require_once 'core/moteur/load.php';
+		require_once 'core/moteur/controller.php';
 		require_once 'core/moteur/plathot.php';
+		Load::loader();
 		if (!empty($_GET['page']) && is_file('app/view/'.$_GET['page'].'.php'))
 		{
-	        include 'app/view/includes/header.php';
 	        if (is_file('app/controller/'.$_GET['page'].'.php')) {
 	        	include 'app/controller/'.$_GET['page'].'.php';
 	        }
+	        	include 'app/view/includes/header.php';
 	        	include 'app/view/'.$_GET['page'].'.php';
 			}
 			else{

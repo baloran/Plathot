@@ -1,5 +1,5 @@
 <?php
-class Create{
+class Forms{
 	
 	/**
 	* Permet de creer des inputs facilement

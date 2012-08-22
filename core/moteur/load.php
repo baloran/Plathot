@@ -26,14 +26,16 @@ class Load{
 			require_once 'app/config/autoload.php';
 			// Library Javascript
 			if (in_array('mootools', $load['js'])) {
-				echo '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>';
+				$loader['js'] = '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>';
 			}if (in_array('angularjs', $load['js'])) {
-				echo '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>';
+				$loader['js'] =  '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>';
 			}
 
 			// Load function
 			if (in_array('form', $load['func'])) {
 				require_once FUNCTIONS.'form.php';
+			}if (in_array('structure', $load['func'])) {
+				require_once FUNCTIONS.'structure.php';
 			}
 
 			// Load library
